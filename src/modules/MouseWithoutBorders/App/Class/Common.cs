@@ -1475,7 +1475,7 @@ namespace MouseWithoutBorders
         {
             Common.LastPos = new Point(
                 Common.PrimaryScreenBounds.Left + ((Common.PrimaryScreenBounds.Right - Common.PrimaryScreenBounds.Left) / 2),
-                Setting.Values.HideMouse ? 4 : Common.PrimaryScreenBounds.Top + ((Common.PrimaryScreenBounds.Bottom - Common.PrimaryScreenBounds.Top) / 2));
+                Setting.Values.HideMouse ? Common.PrimaryScreenBounds.Bottom : Common.PrimaryScreenBounds.Top + ((Common.PrimaryScreenBounds.Bottom - Common.PrimaryScreenBounds.Top) / 2));
 
             if ((desMachineID != MachineID && desMachineID != ID.ALL) || byHideMouseMessage)
             {
